@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pawfect Groom | Premium Pet Grooming</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">🐾 Pawfect<span>Groom</span></div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Book Now</a></li>
+    </ul>
+    <button class="nav-cta" onclick="scrollToSection('contact')">Book a Session</button>
+    <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag">✨ Premium Pet Care</p>
+      <h1>Your Pet Deserves<br/><span>the Royal Treatment</span></h1>
+      <p class="hero-sub">Professional grooming services that leave your furry friends looking fabulous, smelling fresh, and feeling loved.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="scrollToSection('contact')">Book Appointment</button>
+        <button class="btn-secondary" onclick="scrollToSection('services')">Our Services</button>
+      </div>
+      <div class="hero-badges">
+        <div class="badge"><i class="fas fa-star"></i><span>4.9/5 Rating</span></div>
+        <div class="badge"><i class="fas fa-paw"></i><span>2,000+ Happy Pets</span></div>
+        <div class="badge"><i class="fas fa-shield-heart"></i><span>Safe & Gentle</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-blob"></div>
+      <div class="hero-emoji-ring">
+        <span class="float-emoji e1">🐶</span>
+        <span class="float-emoji e2">🐱</span>
+        <span class="float-emoji e3">✂️</span>
+        <span class="float-emoji e4">🛁</span>
+        <span class="float-emoji e5">🐾</span>
+        <span class="float-emoji e6">🌸</span>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-avatar">🐩</div>
+        <div>
+          <strong>Bella just got groomed!</strong>
+          <p>Looking absolutely gorgeous 💕</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <p class="section-tag">What We Offer</p>
+      <h2>Grooming Services</h2>
+      <p class="section-sub">Tailored care for every breed, size and personality.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🛁</div>
+        <h3>Bath & Blowout</h3>
+        <p>Deep cleansing shampoo, conditioner rinse, and a fluffy blowout finish.</p>
+        <span class="service-price">From $35</span>
+      </div>
+      <div class="service-card featured">
+        <div class="featured-badge">Most Popular</div>
+        <div class="service-icon">✂️</div>
+        <h3>Full Groom</h3>
+        <p>Bath, haircut, nail trim, ear cleaning, and a finishing spritz.</p>
+        <span class="service-price">From $65</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💅</div>
+        <h3>Nail Trim & File</h3>
+        <p>Quick and stress-free nail trimming for comfort and health.</p>
+        <span class="service-price">From $15</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">👂</div>
+        <h3>Ear Cleaning</h3>
+        <p>Gentle ear cleaning to prevent infection and keep pups comfy.</p>
+        <span class="service-price">From $12</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🦷</div>
+        <h3>Teeth Brushing</h3>
+        <p>Pet-safe toothpaste to keep that tail-wagging smile bright.</p>
+        <span class="service-price">From $10</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌸</div>
+        <h3>Spa Package</h3>
+        <p>The ultimate luxury pampering — massage, aromatherapy, and more.</p>
+        <span class="service-price">From $95</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="section-header">
+      <p class="section-tag">Before & After</p>
+      <h2>Happy Customers</h2>
+      <p class="section-sub">See the Pawfect transformations our groomers create every day.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item g1"><div class="gallery-overlay"><span>🐶 Max</span></div></div>
+      <div class="gallery-item g2"><div class="gallery-overlay"><span>🐱 Luna</span></div></div>
+      <div class="gallery-item g3"><div class="gallery-overlay"><span>🐩 Bella</span></div></div>
+      <div class="gallery-item g4"><div class="gallery-overlay"><span>🐕 Buddy</span></div></div>
+      <div class="gallery-item g5"><div class="gallery-overlay"><span>🐾 Charlie</span></div></div>
+      <div class="gallery-item g6"><div class="gallery-overlay"><span>🌸 Daisy</span></div></div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header">
+      <p class="section-tag">Happy Pet Parents</p>
+      <h2>What They're Saying</h2>
+    </div>
+    <div class="testimonials-track">
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"My golden retriever Max has never looked so good! The groomers are so patient and loving. 10/10 would recommend!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">👩</div>
+          <div><strong>Sarah M.</strong><br/><small>Max's Mom 🐶</small></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Bella came back smelling like a dream and looking like a show dog. The spa package is absolutely worth it!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">👨</div>
+          <div><strong>James K.</strong><br/><small>Bella's Dad 🐩</small></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"My anxious cat Luna was treated so gently. She actually purred the whole time. This place is magic!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">👩</div>
+          <div><strong>Emily R.</strong><br/><small>Luna's Mom 🐱</small></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Fast, affordable, and our pup Charlie always comes out looking his absolute best. Our go-to groomer forever!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">👨</div>
+          <div><strong>Tom B.</strong><br/><small>Charlie's Dad 🐾</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / BOOKING ===== -->
+  <section class="contact" id="contact">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p class="section-tag">Get In Touch</p>
+        <h2>Book a Session Today!</h2>
+        <p>Ready to treat your pet? Fill in the form and we'll confirm your appointment within 24 hours.</p>
+        <ul class="contact-details">
+          <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+          <li><i class="fas fa-envelope"></i> hello@pawfectgroom.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Paw Street, Pet City, PC 10001</li>
+          <li><i class="fas fa-clock"></i> Mon–Sat: 8am – 7pm</li>
+        </ul>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required />
+          <input type="tel" placeholder="Phone Number" required />
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="Pet's Name" required />
+          <select required>
+            <option value="" disabled selected>Pet Type</option>
+            <option>Dog</option>
+            <option>Cat</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <select required>
+          <option value="" disabled selected>Select a Service</option>
+          <option>Bath & Blowout</option>
+          <option>Full Groom</option>
+          <option>Nail Trim & File</option>
+          <option>Ear Cleaning</option>
+          <option>Teeth Brushing</option>
+          <option>Spa Package</option>
+        </select>
+        <input type="date" required />
+        <textarea placeholder="Any special notes about your pet?" rows="3"></textarea>
+        <button type="submit" class="btn-primary">Book My Appointment 🐾</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">🐾 Pawfect<span>Groom</span></div>
+        <p>Premium grooming services with love, care, and a whole lot of tail wags.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Bath & Blowout</a></li>
+          <li><a href="#">Full Groom</a></li>
+          <li><a href="#">Spa Package</a></li>
+          <li><a href="#">Nail Trim</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PawfectGroom. Made with 💕 for pets everywhere.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SUCCESS TOAST ===== -->
+  <div class="toast" id="toast">🐾 Booking received! We'll confirm shortly.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
