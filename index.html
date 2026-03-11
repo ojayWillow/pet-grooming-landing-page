@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PawLux Grooming | Premium Pet Salon</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Dancing+Script:wght@700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
@@ -20,11 +24,21 @@
       <li><a href="#testimonials">Reviews</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Book Now</a>
+    <div class="navbar-right">
+      <!-- THEME TOGGLE -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <div class="toggle-track">
+          <span class="toggle-icon light-icon">☀️</span>
+          <span class="toggle-icon dark-icon">🌙</span>
+          <div class="toggle-thumb"></div>
+        </div>
+      </button>
+      <a href="#contact" class="nav-cta">Book Now</a>
+    </div>
     <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
   </nav>
 
-  <!-- ===== MOBILE MENU ===== -->
+  <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
     <a href="#services" class="mobile-link">Services</a>
@@ -40,7 +54,6 @@
     <div class="hero-bg-shapes">
       <div class="shape shape-1"></div>
       <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
     </div>
     <div class="hero-inner">
       <div class="hero-content">
@@ -56,68 +69,45 @@
           <a href="#services" class="btn-ghost">Explore Services</a>
         </div>
         <div class="hero-trust">
-          <div class="trust-item">
-            <strong>500+</strong>
-            <span>Happy Pets</span>
-          </div>
+          <div class="trust-item"><strong>500+</strong><span>Happy Pets</span></div>
           <div class="trust-divider"></div>
-          <div class="trust-item">
-            <strong>5★</strong>
-            <span>Avg Rating</span>
-          </div>
+          <div class="trust-item"><strong>5★</strong><span>Avg Rating</span></div>
           <div class="trust-divider"></div>
-          <div class="trust-item">
-            <strong>100%</strong>
-            <span>Safe & Gentle</span>
-          </div>
+          <div class="trust-item"><strong>100%</strong><span>Safe &amp; Gentle</span></div>
         </div>
       </div>
       <div class="hero-visual-col">
         <div class="hero-image-frame">
           <div class="hero-blob-bg"></div>
-          <div class="hero-main-visual">
-            <div class="pet-emoji-big">🐩</div>
-            <div class="floating-card card-left">
-              <span>🛁</span>
-              <div><strong>Fresh & Clean</strong><small>After every visit</small></div>
-            </div>
-            <div class="floating-card card-right">
-              <span>⭐</span>
-              <div><strong>5-Star Salon</strong><small>Trusted by families</small></div>
-            </div>
+          <img
+            class="hero-dog-img"
+            src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=700&auto=format&q=80"
+            alt="Beautifully groomed golden retriever"
+          />
+          <div class="floating-card card-left">
+            <span>🛁</span>
+            <div><strong>Fresh &amp; Clean</strong><small>After every visit</small></div>
           </div>
-          <div class="orbit-emojis">
-            <span class="orb o1">✂️</span>
-            <span class="orb o2">🌸</span>
-            <span class="orb o3">🐾</span>
-            <span class="orb o4">💅</span>
-            <span class="orb o5">🎀</span>
-            <span class="orb o6">🪮</span>
+          <div class="floating-card card-right">
+            <span>⭐</span>
+            <div><strong>5-Star Salon</strong><small>Trusted by families</small></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== MARQUEE STRIP ===== -->
+  <!-- MARQUEE -->
   <div class="marquee-strip">
     <div class="marquee-track">
-      <span>🐶 Professional Grooming</span>
-      <span>✂️ Expert Stylists</span>
-      <span>🛁 Spa Treatments</span>
-      <span>🐾 All Breeds Welcome</span>
-      <span>💕 Gentle & Loving</span>
-      <span>🌸 Looking Fabulous</span>
-      <span>⭐ 5-Star Rated</span>
-      <span>🎀 Finishing Touches</span>
-      <span>🐶 Professional Grooming</span>
-      <span>✂️ Expert Stylists</span>
-      <span>🛁 Spa Treatments</span>
-      <span>🐾 All Breeds Welcome</span>
-      <span>💕 Gentle & Loving</span>
-      <span>🌸 Looking Fabulous</span>
-      <span>⭐ 5-Star Rated</span>
-      <span>🎀 Finishing Touches</span>
+      <span>🐶 Professional Grooming</span><span>✂️ Expert Stylists</span>
+      <span>🛁 Spa Treatments</span><span>🐾 All Breeds Welcome</span>
+      <span>💕 Gentle &amp; Loving</span><span>🌸 Looking Fabulous</span>
+      <span>⭐ 5-Star Rated</span><span>🎀 Finishing Touches</span>
+      <span>🐶 Professional Grooming</span><span>✂️ Expert Stylists</span>
+      <span>🛁 Spa Treatments</span><span>🐾 All Breeds Welcome</span>
+      <span>💕 Gentle &amp; Loving</span><span>🌸 Looking Fabulous</span>
+      <span>⭐ 5-Star Rated</span><span>🎀 Finishing Touches</span>
     </div>
   </div>
 
@@ -129,80 +119,29 @@
       <p class="section-desc">Every service is crafted with care, using premium products suited to your pet's coat and skin.</p>
     </div>
     <div class="services-grid">
-      <div class="svc-card">
-        <div class="svc-icon-wrap" style="--c:#FFE0E0"><span>🛁</span></div>
-        <h3>Bath & Blowout</h3>
-        <p>Deep-cleanse shampoo, conditioning rinse, and a fluffy blowout finish. Your pup emerges fresh and bouncy.</p>
-        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="svc-card featured">
-        <div class="svc-badge">Most Popular ✨</div>
-        <div class="svc-icon-wrap" style="--c:#FFE0E0"><span>✂️</span></div>
-        <h3>Full Groom</h3>
-        <p>Bath, breed-specific haircut, nail trim, ear cleaning, and a fragrant finishing spritz. The royal treatment.</p>
-        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon-wrap" style="--c:#E0F4FF"><span>💅</span></div>
-        <h3>Nail Care</h3>
-        <p>Gentle nail trimming and filing for happy paws and comfortable walks — stress-free for even anxious pets.</p>
-        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon-wrap" style="--c:#E8FFE0"><span>👂</span></div>
-        <h3>Ear Cleaning</h3>
-        <p>Careful ear hygiene to prevent infections. Essential for floppy-eared breeds and long-coat dogs.</p>
-        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon-wrap" style="--c:#FFF4E0"><span>🪮</span></div>
-        <h3>Hygiene Trim</h3>
-        <p>Sanitary and paw-pad tidying between full grooms. A quick essential for maintained freshness.</p>
-        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon-wrap" style="--c:#F0E0FF"><span>🌸</span></div>
-        <h3>De-shedding Treatment</h3>
-        <p>Specialised treatment to manage shedding, leaving your home cleaner and your pet feeling lighter.</p>
-        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
-      </div>
+      <div class="svc-card"><div class="svc-icon-wrap" style="--c:#FFE0E0"><span>🛁</span></div><h3>Bath &amp; Blowout</h3><p>Deep-cleanse shampoo, conditioning rinse, and a fluffy blowout finish. Your pup emerges fresh and bouncy.</p><a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a></div>
+      <div class="svc-card featured"><div class="svc-badge">Most Popular ✨</div><div class="svc-icon-wrap" style="--c:#FFE0E0"><span>✂️</span></div><h3>Full Groom</h3><p>Bath, breed-specific haircut, nail trim, ear cleaning, and a fragrant finishing spritz. The royal treatment.</p><a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a></div>
+      <div class="svc-card"><div class="svc-icon-wrap" style="--c:#E0F4FF"><span>💅</span></div><h3>Nail Care</h3><p>Gentle nail trimming and filing for happy paws and comfortable walks — stress-free for even anxious pets.</p><a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a></div>
+      <div class="svc-card"><div class="svc-icon-wrap" style="--c:#E8FFE0"><span>👂</span></div><h3>Ear Cleaning</h3><p>Careful ear hygiene to prevent infections. Essential for floppy-eared breeds and long-coat dogs.</p><a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a></div>
+      <div class="svc-card"><div class="svc-icon-wrap" style="--c:#FFF4E0"><span>🪮</span></div><h3>Hygiene Trim</h3><p>Sanitary and paw-pad tidying between full grooms. A quick essential for maintained freshness.</p><a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a></div>
+      <div class="svc-card"><div class="svc-icon-wrap" style="--c:#F0E0FF"><span>🌸</span></div><h3>De-shedding</h3><p>Specialised treatment to manage shedding, leaving your home cleaner and your pet feeling lighter.</p><a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a></div>
     </div>
   </section>
 
   <!-- ===== HOW IT WORKS ===== -->
   <section class="process" id="process">
     <div class="section-header">
-      <p class="section-eyebrow">Simple & Easy</p>
+      <p class="section-eyebrow">Simple &amp; Easy</p>
       <h2>How It Works</h2>
     </div>
     <div class="process-steps">
-      <div class="process-step">
-        <div class="step-num">01</div>
-        <div class="step-icon">📅</div>
-        <h3>Book Online</h3>
-        <p>Choose your service and pick a time that works. Our booking is open 24/7, quick and easy.</p>
-      </div>
+      <div class="process-step"><div class="step-num">01</div><div class="step-icon">📅</div><h3>Book Online</h3><p>Choose your service and pick a time that works. Our booking is open 24/7.</p></div>
       <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
-      <div class="process-step">
-        <div class="step-num">02</div>
-        <div class="step-icon">🚗</div>
-        <h3>Drop Off Your Pet</h3>
-        <p>Arrive at your appointment time. We'll greet you and your furry friend with warmth and care.</p>
-      </div>
+      <div class="process-step"><div class="step-num">02</div><div class="step-icon">🚗</div><h3>Drop Off</h3><p>Arrive at your appointment. We'll greet you and your pet with warmth.</p></div>
       <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
-      <div class="process-step">
-        <div class="step-num">03</div>
-        <div class="step-icon">✨</div>
-        <h3>We Work Our Magic</h3>
-        <p>Your pet enjoys a calm, professional grooming session tailored perfectly to their needs.</p>
-      </div>
+      <div class="process-step"><div class="step-num">03</div><div class="step-icon">✨</div><h3>We Work Magic</h3><p>Your pet enjoys a calm, professional session tailored to their needs.</p></div>
       <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
-      <div class="process-step">
-        <div class="step-num">04</div>
-        <div class="step-icon">🎀</div>
-        <h3>Pick Up & Glow</h3>
-        <p>Take home a happy, fresh, and fabulous pet. Ready to show off to the whole neighbourhood.</p>
-      </div>
+      <div class="process-step"><div class="step-num">04</div><div class="step-icon">🎀</div><h3>Pick Up &amp; Glow</h3><p>Take home a happy, fresh, fabulous pet — ready to show off.</p></div>
     </div>
   </section>
 
@@ -214,41 +153,13 @@
       <p class="section-desc">Our clients always leave looking absolutely stunning. Every single time.</p>
     </div>
     <div class="gallery-mosaic">
-      <div class="gal-item tall">
-        <div class="gal-inner">
-          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&auto=format" alt="Freshly groomed golden dog" loading="lazy" />
-          <div class="gal-label">✨ Golden Glow-Up</div>
-        </div>
-      </div>
-      <div class="gal-item">
-        <div class="gal-inner">
-          <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=600&auto=format" alt="Fluffy white Spitz dog" loading="lazy" />
-          <div class="gal-label">🐾 Spitz Fluff</div>
-        </div>
-      </div>
-      <div class="gal-item">
-        <div class="gal-inner">
-          <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=600&auto=format" alt="Groomed poodle" loading="lazy" />
-          <div class="gal-label">🎀 Poodle Perfection</div>
-        </div>
-      </div>
-      <div class="gal-item wide">
-        <div class="gal-inner">
-          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format" alt="Two happy clean dogs" loading="lazy" />
-          <div class="gal-label">💕 Fresh & Happy</div>
-        </div>
-      </div>
-      <div class="gal-item">
-        <div class="gal-inner">
-          <img src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=600&auto=format" alt="Dog at grooming salon" loading="lazy" />
-          <div class="gal-label">🛁 Spa Day</div>
-        </div>
-      </div>
+      <div class="gal-item tall"><div class="gal-inner"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&auto=format" alt="Groomed golden dog" loading="lazy"/><div class="gal-label">✨ Golden Glow-Up</div></div></div>
+      <div class="gal-item"><div class="gal-inner"><img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=600&auto=format" alt="Fluffy Spitz" loading="lazy"/><div class="gal-label">🐾 Spitz Fluff</div></div></div>
+      <div class="gal-item"><div class="gal-inner"><img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=600&auto=format" alt="Poodle" loading="lazy"/><div class="gal-label">🎀 Poodle Perfection</div></div></div>
+      <div class="gal-item wide"><div class="gal-inner"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format" alt="Two happy dogs" loading="lazy"/><div class="gal-label">💕 Fresh &amp; Happy</div></div></div>
+      <div class="gal-item"><div class="gal-inner"><img src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=600&auto=format" alt="Salon dog" loading="lazy"/><div class="gal-label">🛁 Spa Day</div></div></div>
     </div>
-    <div class="gallery-cta">
-      <p>Follow us for daily transformations and happy pets</p>
-      <a href="#" class="btn-insta"><i class="fab fa-instagram"></i> Follow on Instagram</a>
-    </div>
+    <div class="gallery-cta"><p>Follow us for daily transformations</p><a href="#" class="btn-insta"><i class="fab fa-instagram"></i> Follow on Instagram</a></div>
   </section>
 
   <!-- ===== WHY US ===== -->
@@ -257,9 +168,9 @@
       <div class="why-text">
         <p class="section-eyebrow">Why Choose Us</p>
         <h2>We Don't Just Groom.<br/>We Care.</h2>
-        <p class="why-desc">Every pet is unique. Our groomers take time to understand each animal's temperament, breed, and coat needs — so every visit feels tailored and stress-free.</p>
+        <p class="why-desc">Every pet is unique. Our groomers take time to understand each animal's temperament, breed, and coat needs.</p>
         <ul class="why-list">
-          <li><i class="fas fa-check-circle"></i> Certified & experienced groomers</li>
+          <li><i class="fas fa-check-circle"></i> Certified &amp; experienced groomers</li>
           <li><i class="fas fa-check-circle"></i> Premium, pet-safe products only</li>
           <li><i class="fas fa-check-circle"></i> Calm, low-stress environment</li>
           <li><i class="fas fa-check-circle"></i> Breed-specific techniques</li>
@@ -269,21 +180,10 @@
       </div>
       <div class="why-visual">
         <div class="why-card-stack">
-          <div class="why-card wc-1">
-            <div class="wc-icon">🏆</div>
-            <div><strong>Award-Winning</strong><br/><small>Best Pet Salon 2024</small></div>
-          </div>
-          <div class="why-card wc-2">
-            <div class="wc-icon">❤️</div>
-            <div><strong>Stress-Free</strong><br/><small>Calm approach always</small></div>
-          </div>
-          <div class="why-card wc-3">
-            <div class="wc-icon">🌿</div>
-            <div><strong>Eco Products</strong><br/><small>Natural & safe</small></div>
-          </div>
-          <div class="why-bignum">500<span>+</span>
-            <p>Happy<br/>pets served</p>
-          </div>
+          <div class="why-card wc-1"><div class="wc-icon">🏆</div><div><strong>Award-Winning</strong><br/><small>Best Pet Salon 2024</small></div></div>
+          <div class="why-card wc-2"><div class="wc-icon">❤️</div><div><strong>Stress-Free</strong><br/><small>Calm approach always</small></div></div>
+          <div class="why-card wc-3"><div class="wc-icon">🌿</div><div><strong>Eco Products</strong><br/><small>Natural &amp; safe</small></div></div>
+          <div class="why-bignum">500<span>+</span><p>Happy<br/>pets served</p></div>
         </div>
       </div>
     </div>
@@ -296,51 +196,10 @@
       <h2>What Our Clients Say</h2>
     </div>
     <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-top">
-          <div class="review-avatar">👩</div>
-          <div>
-            <strong>Sarah M.</strong>
-            <div class="rev-stars">★★★★★</div>
-          </div>
-        </div>
-        <p>"Our golden retriever Biscuit came home looking like he'd won a dog show! The team was incredibly gentle and patient. We won't go anywhere else."</p>
-        <span class="review-tag">🐕 Golden Retriever Owner</span>
-      </div>
-      <div class="review-card featured-review">
-        <div class="review-quote">"</div>
-        <p>Absolutely incredible service — Luna was nervous at first but the groomer calmed her down instantly. She came back fluffy, happy, and smelling amazing. 10/10 every time!</p>
-        <div class="review-author">
-          <div class="review-avatar">👩‍🦱</div>
-          <div>
-            <strong>Jessica K.</strong>
-            <div class="rev-stars">★★★★★</div>
-            <small>Poodle owner · Regular client</small>
-          </div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-top">
-          <div class="review-avatar">👨</div>
-          <div>
-            <strong>Mark T.</strong>
-            <div class="rev-stars">★★★★★</div>
-          </div>
-        </div>
-        <p>"Professional from start to finish. I booked online in minutes, got a reminder, and my Yorkie Max came back transformed. These guys are genuinely wonderful."</p>
-        <span class="review-tag">🐶 Yorkshire Terrier Owner</span>
-      </div>
-      <div class="review-card">
-        <div class="review-top">
-          <div class="review-avatar">👩‍🦰</div>
-          <div>
-            <strong>Anna R.</strong>
-            <div class="rev-stars">★★★★★</div>
-          </div>
-        </div>
-        <p>"They truly love animals here. You can feel it the moment you walk in. Daisy always comes home calm and happy — never anxious like with other salons."</p>
-        <span class="review-tag">🐩 Bichon Frisé Owner</span>
-      </div>
+      <div class="review-card"><div class="review-top"><div class="review-avatar">👩</div><div><strong>Sarah M.</strong><div class="rev-stars">★★★★★</div></div></div><p>"Our golden retriever Biscuit came home looking like he'd won a dog show! The team was incredibly gentle and patient."</p><span class="review-tag">🐕 Golden Retriever Owner</span></div>
+      <div class="review-card featured-review"><div class="review-quote">"</div><p>Absolutely incredible — Luna was nervous at first but the groomer calmed her down instantly. She came back fluffy, happy, and smelling amazing. 10/10!</p><div class="review-author"><div class="review-avatar">👩‍🦱</div><div><strong>Jessica K.</strong><div class="rev-stars">★★★★★</div><small>Poodle owner · Regular client</small></div></div></div>
+      <div class="review-card"><div class="review-top"><div class="review-avatar">👨</div><div><strong>Mark T.</strong><div class="rev-stars">★★★★★</div></div></div><p>"Professional from start to finish. Booked in minutes, got a reminder, and my Yorkie Max came back transformed."</p><span class="review-tag">🐶 Yorkshire Terrier Owner</span></div>
+      <div class="review-card"><div class="review-top"><div class="review-avatar">👩‍🦰</div><div><strong>Anna R.</strong><div class="rev-stars">★★★★★</div></div></div><p>"They truly love animals here. Daisy always comes home calm and happy — never anxious like with other salons."</p><span class="review-tag">🐩 Bichon Frisé Owner</span></div>
     </div>
     <div class="reviews-summary">
       <div class="rs-item"><span>4.9</span><small>Average rating</small></div>
@@ -351,91 +210,36 @@
 
   <!-- ===== CONTACT ===== -->
   <section class="contact" id="contact">
-    <div class="contact-bg-art">
-      <div class="art-blob ab1"></div>
-      <div class="art-blob ab2"></div>
-    </div>
+    <div class="contact-bg-art"><div class="art-blob ab1"></div><div class="art-blob ab2"></div></div>
     <div class="contact-wrapper">
       <div class="contact-info">
         <p class="section-eyebrow">Let's Talk</p>
         <h2>Book Your Pet's<br/><span class="script-title">Dream Groom</span></h2>
-        <p>Ready to treat your furry best friend? Fill in the form or reach us directly. We respond within the hour!</p>
+        <p>Ready to treat your furry best friend? Fill in the form or reach us directly.</p>
         <div class="contact-cards">
-          <div class="contact-card">
-            <i class="fas fa-phone"></i>
-            <div><strong>Call Us</strong><br/><a href="tel:+15551234567">+1 (555) 123-4567</a></div>
-          </div>
-          <div class="contact-card">
-            <i class="fab fa-whatsapp"></i>
-            <div><strong>WhatsApp</strong><br/><a href="#">Message Us Now</a></div>
-          </div>
-          <div class="contact-card">
-            <i class="fab fa-instagram"></i>
-            <div><strong>Instagram</strong><br/><a href="#">@pawluxgrooming</a></div>
-          </div>
-          <div class="contact-card">
-            <i class="fas fa-map-marker-alt"></i>
-            <div><strong>Location</strong><br/><span>123 Paw Street, Your City</span></div>
-          </div>
-          <div class="contact-card">
-            <i class="fas fa-clock"></i>
-            <div><strong>Hours</strong><br/><span>Mon – Sun: 9:00 – 20:00</span></div>
-          </div>
+          <div class="contact-card"><i class="fas fa-phone"></i><div><strong>Call Us</strong><br/><a href="tel:+15551234567">+1 (555) 123-4567</a></div></div>
+          <div class="contact-card"><i class="fab fa-whatsapp"></i><div><strong>WhatsApp</strong><br/><a href="#">Message Us Now</a></div></div>
+          <div class="contact-card"><i class="fab fa-instagram"></i><div><strong>Instagram</strong><br/><a href="#">@pawluxgrooming</a></div></div>
+          <div class="contact-card"><i class="fas fa-map-marker-alt"></i><div><strong>Location</strong><br/><span>123 Paw Street, Your City</span></div></div>
+          <div class="contact-card"><i class="fas fa-clock"></i><div><strong>Hours</strong><br/><span>Mon – Sun: 9:00 – 20:00</span></div></div>
         </div>
       </div>
       <form class="contact-form" onsubmit="handleSubmit(event)">
         <h3>Request an Appointment</h3>
         <div class="form-row">
-          <div class="form-group">
-            <label>Your Name</label>
-            <input type="text" placeholder="e.g. Sarah Miller" required />
-          </div>
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" placeholder="+1 (555) 000-0000" required />
-          </div>
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder="e.g. Sarah Miller" required /></div>
+          <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+1 (555) 000-0000" required /></div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label>Pet's Name</label>
-            <input type="text" placeholder="e.g. Biscuit" required />
-          </div>
-          <div class="form-group">
-            <label>Breed</label>
-            <input type="text" placeholder="e.g. Golden Retriever" required />
-          </div>
+          <div class="form-group"><label>Pet's Name</label><input type="text" placeholder="e.g. Biscuit" required /></div>
+          <div class="form-group"><label>Breed</label><input type="text" placeholder="e.g. Golden Retriever" required /></div>
         </div>
-        <div class="form-group">
-          <label>Service</label>
-          <select required>
-            <option value="" disabled selected>Choose a service...</option>
-            <option>Bath & Blowout</option>
-            <option>Full Groom</option>
-            <option>Nail Care</option>
-            <option>Ear Cleaning</option>
-            <option>Hygiene Trim</option>
-            <option>De-shedding Treatment</option>
-          </select>
-        </div>
+        <div class="form-group"><label>Service</label><select required><option value="" disabled selected>Choose a service...</option><option>Bath &amp; Blowout</option><option>Full Groom</option><option>Nail Care</option><option>Ear Cleaning</option><option>Hygiene Trim</option><option>De-shedding Treatment</option></select></div>
         <div class="form-row">
-          <div class="form-group">
-            <label>Preferred Date</label>
-            <input type="date" required />
-          </div>
-          <div class="form-group">
-            <label>Preferred Time</label>
-            <select>
-              <option value="" disabled selected>Choose a time...</option>
-              <option>Morning (9am – 12pm)</option>
-              <option>Afternoon (12pm – 4pm)</option>
-              <option>Evening (4pm – 8pm)</option>
-            </select>
-          </div>
+          <div class="form-group"><label>Preferred Date</label><input type="date" required /></div>
+          <div class="form-group"><label>Preferred Time</label><select><option value="" disabled selected>Choose a time...</option><option>Morning (9am – 12pm)</option><option>Afternoon (12pm – 4pm)</option><option>Evening (4pm – 8pm)</option></select></div>
         </div>
-        <div class="form-group">
-          <label>Notes (optional)</label>
-          <textarea placeholder="Any special requests or things we should know about your pet?" rows="3"></textarea>
-        </div>
+        <div class="form-group"><label>Notes (optional)</label><textarea placeholder="Any special requests?" rows="3"></textarea></div>
         <button type="submit" class="btn-primary full-btn">Send Booking Request 🐾</button>
       </form>
     </div>
@@ -446,7 +250,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="#home" class="nav-logo"><span class="paw">🐾</span> PawLux<em>Grooming</em></a>
-        <p>Premium pet grooming with heart. Serving pets and their families with care, expertise, and a whole lot of love.</p>
+        <p>Premium pet grooming with heart. Serving pets and their families with care, expertise, and love.</p>
         <div class="footer-socials">
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
@@ -454,37 +258,11 @@
           <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Bath & Blowout</a></li>
-          <li><a href="#services">Full Groom</a></li>
-          <li><a href="#services">Nail Care</a></li>
-          <li><a href="#services">Ear Cleaning</a></li>
-          <li><a href="#services">De-shedding</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#process">How It Works</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#testimonials">Reviews</a></li>
-          <li><a href="#contact">Book Now</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Visit Us</h4>
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> 123 Paw Street, Your City</li>
-          <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-          <li><i class="fas fa-clock"></i> Mon–Sun: 9:00 – 20:00</li>
-        </ul>
-      </div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Bath &amp; Blowout</a></li><li><a href="#services">Full Groom</a></li><li><a href="#services">Nail Care</a></li><li><a href="#services">Ear Cleaning</a></li><li><a href="#services">De-shedding</a></li></ul></div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="#process">How It Works</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#testimonials">Reviews</a></li><li><a href="#contact">Book Now</a></li></ul></div>
+      <div class="footer-col"><h4>Visit Us</h4><ul><li><i class="fas fa-map-marker-alt"></i> 123 Paw Street, Your City</li><li><i class="fas fa-phone"></i> +1 (555) 123-4567</li><li><i class="fas fa-clock"></i> Mon–Sun: 9:00 – 20:00</li></ul></div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 PawLux Grooming · Made with 💕 for pets everywhere · <a href="#">Privacy Policy</a></p>
-    </div>
+    <div class="footer-bottom"><p>© 2026 PawLux Grooming · Made with 💕 for pets everywhere · <a href="#">Privacy Policy</a></p></div>
   </footer>
 
   <div class="toast" id="toast">🐾 Request sent! We'll reach out very soon. 💕</div>
