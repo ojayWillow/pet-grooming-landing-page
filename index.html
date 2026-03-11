@@ -3,134 +3,205 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pet Beauty Groom | Suņu Frizētava Zolitūdē, Rīgā</title>
+  <title>PawLux Grooming | Premium Pet Salon</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
-    <a href="#home" class="nav-logo">🐾 Pet Beauty<span>Groom</span></a>
+    <a href="#home" class="nav-logo"><span class="paw">🐾</span> PawLux<em>Grooming</em></a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
+      <li><a href="#process">How It Works</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#testimonials">Reviews</a></li>
-      <li><a href="#contact">Book Now</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="nav-cta" onclick="scrollToSection('contact')">Book a Session</button>
+    <a href="#contact" class="nav-cta">Book Now</a>
     <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
   </nav>
 
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#process" class="mobile-link">How It Works</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#testimonials" class="mobile-link">Reviews</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#contact" class="btn-primary" style="text-align:center;margin-top:1rem;">Book Now 🐾</a>
+  </div>
+
   <!-- ===== HERO ===== -->
   <section class="hero" id="home">
-    <div class="hero-content">
-      <p class="hero-tag">✨ Zolitūde's Favourite Grooming Salon</p>
-      <h1>Your Dog Deserves<br/><span>the Royal Treatment</span></h1>
-      <p class="hero-sub">Professional, gentle and loving grooming services in the heart of Zolitūde, Rīga. We make your furry best friend look fabulous and feel amazing — every single visit.</p>
-      <div class="hero-btns">
-        <button class="btn-primary" onclick="scrollToSection('contact')">Book Appointment</button>
-        <button class="btn-secondary" onclick="scrollToSection('services')">Our Services</button>
-      </div>
-      <div class="hero-badges">
-        <div class="badge"><i class="fas fa-star"></i><span>Top Rated in Rīga</span></div>
-        <div class="badge"><i class="fas fa-paw"></i><span>Small & Medium Breeds</span></div>
-        <div class="badge"><i class="fas fa-clock"></i><span>Open 7 Days a Week</span></div>
-      </div>
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
     </div>
-    <div class="hero-visual">
-      <div class="hero-blob"></div>
-      <div class="hero-emoji-ring">
-        <span class="float-emoji e1">🐶</span>
-        <span class="float-emoji e2">🐩</span>
-        <span class="float-emoji e3">✂️</span>
-        <span class="float-emoji e4">🛁</span>
-        <span class="float-emoji e5">🐾</span>
-        <span class="float-emoji e6">🌸</span>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          Premium Pet Grooming Experience
+          <span class="dot"></span>
+        </div>
+        <h1>Your Pet Deserves<br/><span class="script-title">Nothing But the Best</span></h1>
+        <p class="hero-sub">Professional, gentle, and loving grooming services tailored to every breed. Because happy pets make happy families.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Book an Appointment <i class="fas fa-arrow-right"></i></a>
+          <a href="#services" class="btn-ghost">Explore Services</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <strong>500+</strong>
+            <span>Happy Pets</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>5★</strong>
+            <span>Avg Rating</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>100%</strong>
+            <span>Safe & Gentle</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-card">
-        <div class="hero-card-avatar">🐩</div>
-        <div>
-          <strong>Uno just got groomed!</strong>
-          <p>Looking gorgeous as always 💕</p>
+      <div class="hero-visual-col">
+        <div class="hero-image-frame">
+          <div class="hero-blob-bg"></div>
+          <div class="hero-main-visual">
+            <div class="pet-emoji-big">🐩</div>
+            <div class="floating-card card-left">
+              <span>🛁</span>
+              <div><strong>Fresh & Clean</strong><small>After every visit</small></div>
+            </div>
+            <div class="floating-card card-right">
+              <span>⭐</span>
+              <div><strong>5-Star Salon</strong><small>Trusted by families</small></div>
+            </div>
+          </div>
+          <div class="orbit-emojis">
+            <span class="orb o1">✂️</span>
+            <span class="orb o2">🌸</span>
+            <span class="orb o3">🐾</span>
+            <span class="orb o4">💅</span>
+            <span class="orb o5">🎀</span>
+            <span class="orb o6">🪮</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== ABOUT STRIP ===== -->
-  <section class="about-strip">
-    <div class="about-strip-inner">
-      <div class="about-item">
-        <i class="fas fa-heart"></i>
-        <div>
-          <strong>Passionate Groomer</strong>
-          <p>Irina treats every dog with genuine love and care</p>
-        </div>
-      </div>
-      <div class="about-item">
-        <i class="fas fa-scissors"></i>
-        <div>
-          <strong>Small & Medium Breeds</strong>
-          <p>Specialised expertise for the perfect cut every time</p>
-        </div>
-      </div>
-      <div class="about-item">
-        <i class="fas fa-shield-heart"></i>
-        <div>
-          <strong>Safe & Stress-Free</strong>
-          <p>Your pet is in calm, professional hands always</p>
-        </div>
-      </div>
-      <div class="about-item">
-        <i class="fas fa-calendar-check"></i>
-        <div>
-          <strong>Online Booking 24/7</strong>
-          <p>Reserve your slot anytime, day or night</p>
-        </div>
-      </div>
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>🐶 Professional Grooming</span>
+      <span>✂️ Expert Stylists</span>
+      <span>🛁 Spa Treatments</span>
+      <span>🐾 All Breeds Welcome</span>
+      <span>💕 Gentle & Loving</span>
+      <span>🌸 Looking Fabulous</span>
+      <span>⭐ 5-Star Rated</span>
+      <span>🎀 Finishing Touches</span>
+      <span>🐶 Professional Grooming</span>
+      <span>✂️ Expert Stylists</span>
+      <span>🛁 Spa Treatments</span>
+      <span>🐾 All Breeds Welcome</span>
+      <span>💕 Gentle & Loving</span>
+      <span>🌸 Looking Fabulous</span>
+      <span>⭐ 5-Star Rated</span>
+      <span>🎀 Finishing Touches</span>
     </div>
-  </section>
+  </div>
 
   <!-- ===== SERVICES ===== -->
   <section class="services" id="services">
     <div class="section-header">
-      <p class="section-tag">What We Offer</p>
-      <h2>Grooming Services</h2>
-      <p class="section-sub">Tailored hygiene & grooming care for every breed, size and personality.</p>
+      <p class="section-eyebrow">What We Offer</p>
+      <h2>Our Grooming Services</h2>
+      <p class="section-desc">Every service is crafted with care, using premium products suited to your pet's coat and skin.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">🛁</div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap" style="--c:#FFE0E0"><span>🛁</span></div>
         <h3>Bath & Blowout</h3>
-        <p>Deep cleansing shampoo, conditioner rinse, and a fluffy blowout finish for a fresh, clean pup.</p>
+        <p>Deep-cleanse shampoo, conditioning rinse, and a fluffy blowout finish. Your pup emerges fresh and bouncy.</p>
+        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="service-card featured">
-        <div class="featured-badge">Most Popular</div>
-        <div class="service-icon">✂️</div>
+      <div class="svc-card featured">
+        <div class="svc-badge">Most Popular ✨</div>
+        <div class="svc-icon-wrap" style="--c:#FFE0E0"><span>✂️</span></div>
         <h3>Full Groom</h3>
-        <p>Bath, breed-specific haircut, nail trim, ear cleaning, and a finishing spritz. The complete package.</p>
+        <p>Bath, breed-specific haircut, nail trim, ear cleaning, and a fragrant finishing spritz. The royal treatment.</p>
+        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="service-card">
-        <div class="service-icon">💅</div>
-        <h3>Nail Trim & File</h3>
-        <p>Quick and stress-free nail trimming for your dog's comfort, health and happy walks.</p>
+      <div class="svc-card">
+        <div class="svc-icon-wrap" style="--c:#E0F4FF"><span>💅</span></div>
+        <h3>Nail Care</h3>
+        <p>Gentle nail trimming and filing for happy paws and comfortable walks — stress-free for even anxious pets.</p>
+        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="service-card">
-        <div class="service-icon">👂</div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap" style="--c:#E8FFE0"><span>👂</span></div>
         <h3>Ear Cleaning</h3>
-        <p>Gentle ear cleaning to prevent infection and keep your pup comfortable and healthy.</p>
+        <p>Careful ear hygiene to prevent infections. Essential for floppy-eared breeds and long-coat dogs.</p>
+        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="service-card">
-        <div class="service-icon">🪮</div>
+      <div class="svc-card">
+        <div class="svc-icon-wrap" style="--c:#FFF4E0"><span>🪮</span></div>
         <h3>Hygiene Trim</h3>
-        <p>Sanitary area trimming and paw pad tidying — essential hygiene between full grooms.</p>
+        <p>Sanitary and paw-pad tidying between full grooms. A quick essential for maintained freshness.</p>
+        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="service-card">
-        <div class="service-icon">🌸</div>
-        <h3>Full Hygiene Package</h3>
-        <p>The complete hygiene session — bath, ears, nails, hygiene trim, blowout, and finishing touch.</p>
+      <div class="svc-card">
+        <div class="svc-icon-wrap" style="--c:#F0E0FF"><span>🌸</span></div>
+        <h3>De-shedding Treatment</h3>
+        <p>Specialised treatment to manage shedding, leaving your home cleaner and your pet feeling lighter.</p>
+        <a href="#contact" class="svc-link">Book this <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="process" id="process">
+    <div class="section-header">
+      <p class="section-eyebrow">Simple & Easy</p>
+      <h2>How It Works</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <div class="step-icon">📅</div>
+        <h3>Book Online</h3>
+        <p>Choose your service and pick a time that works. Our booking is open 24/7, quick and easy.</p>
+      </div>
+      <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <div class="step-icon">🚗</div>
+        <h3>Drop Off Your Pet</h3>
+        <p>Arrive at your appointment time. We'll greet you and your furry friend with warmth and care.</p>
+      </div>
+      <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <div class="step-icon">✨</div>
+        <h3>We Work Our Magic</h3>
+        <p>Your pet enjoys a calm, professional grooming session tailored perfectly to their needs.</p>
+      </div>
+      <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <div class="step-icon">🎀</div>
+        <h3>Pick Up & Glow</h3>
+        <p>Take home a happy, fresh, and fabulous pet. Ready to show off to the whole neighbourhood.</p>
       </div>
     </div>
   </section>
@@ -138,189 +209,285 @@
   <!-- ===== GALLERY ===== -->
   <section class="gallery" id="gallery">
     <div class="section-header">
-      <p class="section-tag">Transformations</p>
-      <h2>Our Happy Clients ✂️🐾</h2>
-      <p class="section-sub">Every dog leaves our salon looking their absolute best. See for yourself!</p>
+      <p class="section-eyebrow">Before &amp; After</p>
+      <h2>Transformations 🪄</h2>
+      <p class="section-desc">Our clients always leave looking absolutely stunning. Every single time.</p>
     </div>
-
-    <div class="gallery-grid">
-
-      <!-- Featured large tile: Spitz spanning 2 rows -->
-      <div class="gallery-item gallery-featured">
-        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/7c2f06582b799f87dfce10a86aad8b6322d820f2.jpg" alt="Beautifully groomed fluffy Spitz standing on grooming table" loading="lazy" />
-        <div class="gallery-overlay"><span>✂️ Spitz Fluffiness</span></div>
+    <div class="gallery-mosaic">
+      <div class="gal-item tall">
+        <div class="gal-inner">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&auto=format" alt="Freshly groomed golden dog" loading="lazy" />
+          <div class="gal-label">✨ Golden Glow-Up</div>
+        </div>
       </div>
-
-      <!-- Top right -->
-      <div class="gallery-item">
-        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/7dbcac3429217655df0e4b0202faefea915a8877.jpg" alt="Freshly groomed Yorkshire Terrier with pink collar" loading="lazy" />
-        <div class="gallery-overlay"><span>🐶 Yorkshire Terrier</span></div>
+      <div class="gal-item">
+        <div class="gal-inner">
+          <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=600&auto=format" alt="Fluffy white Spitz dog" loading="lazy" />
+          <div class="gal-label">🐾 Spitz Fluff</div>
+        </div>
       </div>
-
-      <div class="gallery-item">
-        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/bbd90d78759be52f53fdaf3de7d07bdd135532aa.jpg" alt="Fluffy groomed Bichon Frise puppy" loading="lazy" />
-        <div class="gallery-overlay"><span>🐾 Bichon Frisé</span></div>
+      <div class="gal-item">
+        <div class="gal-inner">
+          <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=600&auto=format" alt="Groomed poodle" loading="lazy" />
+          <div class="gal-label">🎀 Poodle Perfection</div>
+        </div>
       </div>
-
-      <!-- Bottom right -->
-      <div class="gallery-item">
-        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c84d09cde184ff1478bbe49aaaf19de0b60148bb.jpg" alt="Groomed Yorkshire Terrier face close-up" loading="lazy" />
-        <div class="gallery-overlay"><span>🐕 Yorkie Close-Up</span></div>
+      <div class="gal-item wide">
+        <div class="gal-inner">
+          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&auto=format" alt="Two happy clean dogs" loading="lazy" />
+          <div class="gal-label">💕 Fresh & Happy</div>
+        </div>
       </div>
-
-      <div class="gallery-item">
-        <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/76517a8881612a9e34c0f6fe65e4f337d8425ccc.jpg" alt="White Maltese dog with pink grooming bows" loading="lazy" />
-        <div class="gallery-overlay"><span>🌸 Maltese with Bows</span></div>
+      <div class="gal-item">
+        <div class="gal-inner">
+          <img src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=600&auto=format" alt="Dog at grooming salon" loading="lazy" />
+          <div class="gal-label">🛁 Spa Day</div>
+        </div>
       </div>
-
     </div>
-
     <div class="gallery-cta">
-      <p>See more transformations on Instagram!</p>
-      <a href="https://www.instagram.com/pet_beauty_groom/" target="_blank" class="btn-instagram">
-        <i class="fab fa-instagram"></i> @pet_beauty_groom
-      </a>
+      <p>Follow us for daily transformations and happy pets</p>
+      <a href="#" class="btn-insta"><i class="fab fa-instagram"></i> Follow on Instagram</a>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-us">
+    <div class="why-us-inner">
+      <div class="why-text">
+        <p class="section-eyebrow">Why Choose Us</p>
+        <h2>We Don't Just Groom.<br/>We Care.</h2>
+        <p class="why-desc">Every pet is unique. Our groomers take time to understand each animal's temperament, breed, and coat needs — so every visit feels tailored and stress-free.</p>
+        <ul class="why-list">
+          <li><i class="fas fa-check-circle"></i> Certified & experienced groomers</li>
+          <li><i class="fas fa-check-circle"></i> Premium, pet-safe products only</li>
+          <li><i class="fas fa-check-circle"></i> Calm, low-stress environment</li>
+          <li><i class="fas fa-check-circle"></i> Breed-specific techniques</li>
+          <li><i class="fas fa-check-circle"></i> Transparent pricing, no surprises</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Book Your Visit 🐾</a>
+      </div>
+      <div class="why-visual">
+        <div class="why-card-stack">
+          <div class="why-card wc-1">
+            <div class="wc-icon">🏆</div>
+            <div><strong>Award-Winning</strong><br/><small>Best Pet Salon 2024</small></div>
+          </div>
+          <div class="why-card wc-2">
+            <div class="wc-icon">❤️</div>
+            <div><strong>Stress-Free</strong><br/><small>Calm approach always</small></div>
+          </div>
+          <div class="why-card wc-3">
+            <div class="wc-icon">🌿</div>
+            <div><strong>Eco Products</strong><br/><small>Natural & safe</small></div>
+          </div>
+          <div class="why-bignum">500<span>+</span>
+            <p>Happy<br/>pets served</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ===== TESTIMONIALS ===== -->
   <section class="testimonials" id="testimonials">
     <div class="section-header">
-      <p class="section-tag">Happy Pet Parents</p>
-      <h2>What They're Saying</h2>
+      <p class="section-eyebrow">Pet Parent Love</p>
+      <h2>What Our Clients Say</h2>
     </div>
-    <div class="testimonials-track">
-      <div class="testimonial-card">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>"Professional groomer who does her work with genuine love for animals. We are regular customers — we travel a long way because the result is outstanding and our dog always comes back happy!"</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">👩</div>
-          <div><strong>Kristīne S.</strong><br/><small>Regular Client 🐾</small></div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">👩</div>
+          <div>
+            <strong>Sarah M.</strong>
+            <div class="rev-stars">★★★★★</div>
+          </div>
+        </div>
+        <p>"Our golden retriever Biscuit came home looking like he'd won a dog show! The team was incredibly gentle and patient. We won't go anywhere else."</p>
+        <span class="review-tag">🐕 Golden Retriever Owner</span>
+      </div>
+      <div class="review-card featured-review">
+        <div class="review-quote">"</div>
+        <p>Absolutely incredible service — Luna was nervous at first but the groomer calmed her down instantly. She came back fluffy, happy, and smelling amazing. 10/10 every time!</p>
+        <div class="review-author">
+          <div class="review-avatar">👩‍🦱</div>
+          <div>
+            <strong>Jessica K.</strong>
+            <div class="rev-stars">★★★★★</div>
+            <small>Poodle owner · Regular client</small>
+          </div>
         </div>
       </div>
-      <div class="testimonial-card">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>"Simply super — even with the most difficult and fluffy clients she finds exactly the right approach. Absolutely love this salon!"</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">👩</div>
-          <div><strong>Inga P.</strong><br/><small>Happy Customer 🐩</small></div>
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">👨</div>
+          <div>
+            <strong>Mark T.</strong>
+            <div class="rev-stars">★★★★★</div>
+          </div>
         </div>
+        <p>"Professional from start to finish. I booked online in minutes, got a reminder, and my Yorkie Max came back transformed. These guys are genuinely wonderful."</p>
+        <span class="review-tag">🐶 Yorkshire Terrier Owner</span>
       </div>
-      <div class="testimonial-card">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>"A huge thank you to Irina! Uno always comes back beautifully groomed — ears cleaned, nails trimmed, everything from A to Z. A true professional. Highly recommend!"</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">👩</div>
-          <div><strong>Madara G.</strong><br/><small>Uno's Mom 🐶</small></div>
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">👩‍🦰</div>
+          <div>
+            <strong>Anna R.</strong>
+            <div class="rev-stars">★★★★★</div>
+          </div>
         </div>
+        <p>"They truly love animals here. You can feel it the moment you walk in. Daisy always comes home calm and happy — never anxious like with other salons."</p>
+        <span class="review-tag">🐩 Bichon Frisé Owner</span>
       </div>
-      <div class="testimonial-card">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>"Excellent work, wonderful communication. My dog absolutely adores Irina! Individual approach and so caring with every animal."</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">👩</div>
-          <div><strong>Inga V.</strong><br/><small>Loyal Client 🐕</small></div>
-        </div>
-      </div>
+    </div>
+    <div class="reviews-summary">
+      <div class="rs-item"><span>4.9</span><small>Average rating</small></div>
+      <div class="rs-item"><span>200+</span><small>Reviews online</small></div>
+      <div class="rs-item"><span>98%</span><small>Would recommend</small></div>
     </div>
   </section>
 
-  <!-- ===== CONTACT / BOOKING ===== -->
+  <!-- ===== CONTACT ===== -->
   <section class="contact" id="contact">
+    <div class="contact-bg-art">
+      <div class="art-blob ab1"></div>
+      <div class="art-blob ab2"></div>
+    </div>
     <div class="contact-wrapper">
       <div class="contact-info">
-        <p class="section-tag">Get In Touch</p>
-        <h2>Book Your Session!</h2>
-        <p>Ready to treat your pet? Book online 24/7 or give us a call. We'll take great care of your furry friend!</p>
-        <ul class="contact-details">
-          <li><i class="fas fa-phone"></i> <a href="tel:+37125195510">+371 25 195 510</a></li>
-          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/37125195510" target="_blank">WhatsApp Us</a></li>
-          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/pet_beauty_groom/" target="_blank">@pet_beauty_groom</a></li>
-          <li><i class="fas fa-map-marker-alt"></i> Ruses iela 6 k-1, 2. stāvs, Rīga</li>
-          <li><i class="fas fa-clock"></i> Mon – Sun: 10:00 – 21:00</li>
-        </ul>
-        <a href="https://apnt.app/pet_beauty_groom" target="_blank" class="btn-primary book-online-btn">
-          Book Online Now 🐾
-        </a>
+        <p class="section-eyebrow">Let's Talk</p>
+        <h2>Book Your Pet's<br/><span class="script-title">Dream Groom</span></h2>
+        <p>Ready to treat your furry best friend? Fill in the form or reach us directly. We respond within the hour!</p>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <div><strong>Call Us</strong><br/><a href="tel:+15551234567">+1 (555) 123-4567</a></div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-whatsapp"></i>
+            <div><strong>WhatsApp</strong><br/><a href="#">Message Us Now</a></div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-instagram"></i>
+            <div><strong>Instagram</strong><br/><a href="#">@pawluxgrooming</a></div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><strong>Location</strong><br/><span>123 Paw Street, Your City</span></div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-clock"></i>
+            <div><strong>Hours</strong><br/><span>Mon – Sun: 9:00 – 20:00</span></div>
+          </div>
+        </div>
       </div>
       <form class="contact-form" onsubmit="handleSubmit(event)">
+        <h3>Request an Appointment</h3>
         <div class="form-row">
-          <input type="text" placeholder="Your Name" required />
-          <input type="tel" placeholder="Phone Number" required />
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="e.g. Sarah Miller" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+1 (555) 000-0000" required />
+          </div>
         </div>
         <div class="form-row">
-          <input type="text" placeholder="Dog's Name" required />
-          <input type="text" placeholder="Breed" required />
+          <div class="form-group">
+            <label>Pet's Name</label>
+            <input type="text" placeholder="e.g. Biscuit" required />
+          </div>
+          <div class="form-group">
+            <label>Breed</label>
+            <input type="text" placeholder="e.g. Golden Retriever" required />
+          </div>
         </div>
-        <select required>
-          <option value="" disabled selected>Select a Service</option>
-          <option>Bath & Blowout</option>
-          <option>Full Groom</option>
-          <option>Nail Trim & File</option>
-          <option>Ear Cleaning</option>
-          <option>Hygiene Trim</option>
-          <option>Full Hygiene Package</option>
-        </select>
-        <input type="date" required />
-        <textarea placeholder="Any special notes about your dog?" rows="3"></textarea>
-        <button type="submit" class="btn-primary">Send Booking Request 🐾</button>
+        <div class="form-group">
+          <label>Service</label>
+          <select required>
+            <option value="" disabled selected>Choose a service...</option>
+            <option>Bath & Blowout</option>
+            <option>Full Groom</option>
+            <option>Nail Care</option>
+            <option>Ear Cleaning</option>
+            <option>Hygiene Trim</option>
+            <option>De-shedding Treatment</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preferred Date</label>
+            <input type="date" required />
+          </div>
+          <div class="form-group">
+            <label>Preferred Time</label>
+            <select>
+              <option value="" disabled selected>Choose a time...</option>
+              <option>Morning (9am – 12pm)</option>
+              <option>Afternoon (12pm – 4pm)</option>
+              <option>Evening (4pm – 8pm)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Notes (optional)</label>
+          <textarea placeholder="Any special requests or things we should know about your pet?" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-btn">Send Booking Request 🐾</button>
       </form>
-    </div>
-  </section>
-
-  <!-- ===== MAP ===== -->
-  <section class="map-section">
-    <div class="section-header">
-      <p class="section-tag">Find Us</p>
-      <h2>We're in Zolitūde, Rīga</h2>
-      <p class="section-sub">Ruses iela 6 k-1, 2. stāvs — easy to reach by public transport</p>
-    </div>
-    <div class="map-wrapper">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.5!2d24.0023979!3d56.9478393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eedb004f17c6f3%3A0x7b64450b1c1c38c4!2sPet%20Beauty%20Groom!5e0!3m2!1sen!2slv!4v1"
-        width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen=""
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="footer-top">
+    <div class="footer-inner">
       <div class="footer-brand">
-        <a href="#home" class="nav-logo">🐾 Pet Beauty<span>Groom</span></a>
-        <p>Professional dog grooming in Zolitūde, Rīga. We treat every dog with love, skill, and care.</p>
-        <div class="socials">
-          <a href="https://www.instagram.com/pet_beauty_groom/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/petbeautygroom/" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://wa.me/37125195510" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="#home" class="nav-logo"><span class="paw">🐾</span> PawLux<em>Grooming</em></a>
+        <p>Premium pet grooming with heart. Serving pets and their families with care, expertise, and a whole lot of love.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
         </div>
       </div>
-      <div class="footer-links">
+      <div class="footer-col">
         <h4>Services</h4>
         <ul>
           <li><a href="#services">Bath & Blowout</a></li>
           <li><a href="#services">Full Groom</a></li>
-          <li><a href="#services">Full Hygiene Package</a></li>
-          <li><a href="#services">Nail Trim</a></li>
+          <li><a href="#services">Nail Care</a></li>
+          <li><a href="#services">Ear Cleaning</a></li>
+          <li><a href="#services">De-shedding</a></li>
         </ul>
       </div>
-      <div class="footer-links">
-        <h4>Salon</h4>
+      <div class="footer-col">
+        <h4>Explore</h4>
         <ul>
-          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#process">How It Works</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Book Appointment</a></li>
-          <li><a href="https://apnt.app/pet_beauty_groom" target="_blank">Online Booking</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Paw Street, Your City</li>
+          <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+          <li><i class="fas fa-clock"></i> Mon–Sun: 9:00 – 20:00</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Pet Beauty Groom · Ruses iela 6 k-1, Rīga · Made with 💕 for dogs everywhere.</p>
+      <p>© 2026 PawLux Grooming · Made with 💕 for pets everywhere · <a href="#">Privacy Policy</a></p>
     </div>
   </footer>
 
-  <div class="toast" id="toast">🐾 Message sent! We'll be in touch very soon.</div>
+  <div class="toast" id="toast">🐾 Request sent! We'll reach out very soon. 💕</div>
   <script src="script.js"></script>
 </body>
 </html>
