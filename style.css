@@ -33,7 +33,13 @@ body {
   box-shadow: 0 2px 20px rgba(0,0,0,0.06);
   transition: var(--transition);
 }
-.nav-logo { font-family: 'Pacifico', cursive; font-size: 1.5rem; color: var(--primary); }
+.nav-logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
 .nav-logo span { color: var(--text); }
 .nav-links { display: flex; list-style: none; gap: 2rem; }
 .nav-links a { text-decoration: none; color: var(--text); font-weight: 600; font-size: 0.95rem; transition: var(--transition); }
@@ -173,11 +179,6 @@ section { padding: 6rem 5%; }
 /* ===== GALLERY ===== */
 .gallery { background: linear-gradient(135deg, #fff0f0, #fff5fb); }
 
-/*
-  5-photo layout:
-  [ Featured (2 rows tall) ] [ Yorkie    ] [ Bichon ]
-  [ Featured (2 rows tall) ] [ Yorkie CU ] [ Maltese ]
-*/
 .gallery-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -207,7 +208,6 @@ section { padding: 6rem 5%; }
 .gallery-item:hover img { transform: scale(1.07); }
 .gallery-item:hover .gallery-overlay { opacity: 1; }
 
-/* Featured tile spans full left column across both rows */
 .gallery-featured {
   grid-row: 1 / 3;
   grid-column: 1 / 2;
@@ -296,7 +296,7 @@ section { padding: 6rem 5%; }
 .footer { background: #1a1a2e; color: rgba(255,255,255,0.8); }
 .footer-top { display: flex; gap: 3rem; flex-wrap: wrap; padding: 3rem 5%; border-bottom: 1px solid rgba(255,255,255,0.1); }
 .footer-brand { flex: 2; min-width: 200px; }
-.footer-brand .nav-logo { color: #ff6b6b; margin-bottom: 0.8rem; }
+.footer-brand .nav-logo { color: #ff6b6b; margin-bottom: 0.8rem; display: block; }
 .footer-brand .nav-logo span { color: white; }
 .footer-brand p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.2rem; }
 .socials { display: flex; gap: 1rem; }
