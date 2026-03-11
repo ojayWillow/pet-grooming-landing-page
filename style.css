@@ -173,6 +173,11 @@ section { padding: 6rem 5%; }
 /* ===== GALLERY ===== */
 .gallery { background: linear-gradient(135deg, #fff0f0, #fff5fb); }
 
+/*
+  5-photo layout:
+  [ Featured (2 rows tall) ] [ Yorkie    ] [ Bichon ]
+  [ Featured (2 rows tall) ] [ Yorkie CU ] [ Maltese ]
+*/
 .gallery-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -202,7 +207,7 @@ section { padding: 6rem 5%; }
 .gallery-item:hover img { transform: scale(1.07); }
 .gallery-item:hover .gallery-overlay { opacity: 1; }
 
-/* Featured tile spans 2 rows on the left */
+/* Featured tile spans full left column across both rows */
 .gallery-featured {
   grid-row: 1 / 3;
   grid-column: 1 / 2;
@@ -321,7 +326,7 @@ section { padding: 6rem 5%; }
 @media (max-width: 900px) {
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 240px 240px 240px;
+    grid-template-rows: 220px 220px 220px;
   }
   .gallery-featured { grid-row: auto; grid-column: auto; }
 }
